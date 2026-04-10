@@ -5,6 +5,10 @@ let contadores = {
     wer: 0,
     sinister2: 0,
     martyrs: 0,
+    caso39: 0,
+    elritual: 0,
+    ghostland: 0,
+    elbeberosemary: 0,
 };
 
 function like(peli) {
