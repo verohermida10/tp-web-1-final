@@ -106,3 +106,20 @@ footer{
     padding: 5px 10px;
     border-radius: 5px;
 }
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.pelicula {
+    text-align: center;
+    display: grid;
+     justify-items:center;
+}
+
+.pelicula img {
+    width: 200px;
+    border-radius: 10px;
+}
