@@ -1,6 +1,8 @@
 let contadores = {
     df2: 0,
-    sinister: 0
+    sinister: 0,
+    gonjiam: 0,
+    wer: 0,
 };
 
 function like(peli) {

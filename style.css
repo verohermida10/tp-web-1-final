@@ -117,9 +117,14 @@ footer{
     text-align: center;
     display: grid;
      justify-items:center;
+
 }
 
 .pelicula img {
     width: 200px;
     border-radius: 10px;
+}
+.pelicula-avance{
+    width: 300px; 
+    height: 200px;
 }
