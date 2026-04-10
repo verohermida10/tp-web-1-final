@@ -1,8 +1,9 @@
-let contador = 0;
+let contadores = {
+    df2: 0,
+    sinister: 0
+};
 
-function like() {
-    let contador = 0;
-    contador++;
-    document.getElementById("contador").innerText = "Likes: " + contador;
-
+function like(peli) {
+    contadores[peli]++;
+    document.getElementById(peli).innerText = "Likes: " + contadores[peli];
 }
