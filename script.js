@@ -35,6 +35,8 @@ let contadores = {
     losotros: 0,
     cera: 0,
     redeye: 0,
+    poseidon: 0,
+    mariposa: 0,
 };
 
 function like(peli) {
