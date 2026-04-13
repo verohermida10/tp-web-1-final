@@ -37,6 +37,8 @@ let contadores = {
     redeye: 0,
     poseidon: 0,
     mariposa: 0,
+    imageofyou: 0,
+    housenextdoor: 0,
 };
 
 function like(peli) {
