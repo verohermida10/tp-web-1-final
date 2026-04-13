@@ -131,3 +131,19 @@ footer{
     margin-top: 50px;
     text-align: left;
 }
+.fila-abajo {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.pelicula-avance{
+    width: 300px;
+    height: 200px;
+}
+.fila-abajo {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
