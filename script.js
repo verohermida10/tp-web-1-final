@@ -45,6 +45,16 @@ let contadores = {
     rascacielos: 0,
     smith: 0,
     sanandres: 0,
+    ff1: 0,
+    ff2: 0,
+    ff3: 0,
+    ff4: 0,
+    ff5: 0,
+    ff6:0,
+    ff7: 0,
+    ff8: 0,
+    ff9: 0,
+    ff10: 0,
 };
 
 function like(peli) {
