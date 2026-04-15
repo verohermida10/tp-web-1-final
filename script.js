@@ -55,6 +55,14 @@ let contadores = {
     ff8: 0,
     ff9: 0,
     ff10: 0,
+    deathrace1: 0,
+    deathrace2: 0,
+    boca: 0,
+    f1: 0,
+    alex: 0,
+    rocky4: 0,
+    cr7: 0,
+    messi: 0,
 };
 
 function like(peli) {
