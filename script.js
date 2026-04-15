@@ -39,6 +39,12 @@ let contadores = {
     mariposa: 0,
     imageofyou: 0,
     housenextdoor: 0,
+    flightplan: 0,
+    factory: 0,
+    cabina10: 0,
+    rascacielos: 0,
+    smith: 0,
+    sanandres: 0,
 };
 
 function like(peli) {
