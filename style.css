@@ -120,9 +120,12 @@ footer{
 }
 
 .pelicula img {
-    width: 200px;
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
     border-radius: 10px;
 }
+
 .pelicula-avance{
     width: 300px; 
     height: 200px;

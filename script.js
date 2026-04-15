@@ -15,6 +15,7 @@ let contadores = {
     conjuro1: 0,
     conjuro2: 0,
     conjuro3: 0,
+    conjuro4: 0,
     annabelle1: 0,
     annabelle2: 0,
     annabelle3: 0,
