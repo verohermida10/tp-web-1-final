@@ -1,0 +1,152 @@
+html{
+    background-color: black;
+    color: white;
+}
+body{
+    font-family: Arial;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+header{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    nav a{
+        color: white;
+        margin: 10px;
+        text-decoration: none;
+    }
+}
+main{
+    display: grid;
+    
+    padding: 40px;
+}
+iframe{
+     margin-top: 20px;
+    border-radius: 10px;
+}
+   
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedor-pelis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.card img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.contenedor-pelis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+
+.contenedor-pelis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card button {
+    margin-top: 10px;
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.contenedor {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.pelicula {
+    text-align: center;
+    display: grid;
+     justify-items:center;
+
+}
+
+.pelicula img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pelicula-avance{
+    width: 300px; 
+    height: 200px;
+}
+.seccion-abajo {
+    margin-top: 50px;
+    text-align: left;
+}
+.fila-abajo {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.pelicula-avance{
+    width: 300px;
+    height: 200px;
+}
+.fila-abajo {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

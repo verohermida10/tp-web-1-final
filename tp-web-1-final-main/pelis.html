@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Películas - CineMania</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CineMania 🎬</h1>
+    </header>
+
+    <main>
+        <h2>Terror</h2>
+        <div class="contenedor">
+
+
+            <!-- SINISTER -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BMjI5MTg1Njg0Ml5BMl5BanBnXkFtZTcwNzg2Mjc4Nw@@._V1_.jpg">
+                <h3>Sinister</h3>
+                <button onclick="like('sinister')">❤️ Me gusta</button>
+                <p id="sinister">likes: 0</p>
+
+                <iframe class="pelicula-avance" width="560" height="315"
+                    src="https://www.youtube.com/embed/_kbQAJR9YWQ?si=AuHR3umL74qvxKjL" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BMjM3MTQ5NjA0OV5BMl5BanBnXkFtZTgwMzg2OTYyNTE@._V1_.jpg">
+                <h3>Sinister 2</h3>
+
+                <button onclick="like('sinister2')">❤️ Me gusta</button>
+                <p id="sinister2">Likes: 0</p>
+
+                <iframe class="pelicula-avance" width="560" height="315"
+                    src="https://www.youtube.com/embed/4L64vpYNcEM?si=x8C2CHQWBA4PjdGg" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="pelicula">
+                <img width="300px" height="300px"
+                    src="https://m.media-amazon.com/images/M/MV5BOWI1Yjk5ZWEtZjcyNS00NmZkLWFkNzUtMDA5YmNhODA1ZDVhXkEyXkFqcGc@._V1_.jpg">
+                <h3>Gonjiam: Hospital Abandonado</h3>
+
+                <button onclick="like('gonjiam')">❤️ Me gusta</button>
+                <p id="gonjiam">Likes: 0</p>
+
+                <iframe class="pelicula-avance" width="300" height="300"
+                    src="https://www.youtube.com/embed/p9V-rbw3QGY?si=Zlbm6cG6rH4KIxBV" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="pelicula">
+                <img
+                    src="https://static.wikia.nocookie.net/doblaje/images/7/74/Wer-poster.jpg/revision/latest?cb=20150124171900&path-prefix=es">
+                <h3>Wer (Inhumano)</h3>
+
+                <button onclick="like('wer')">❤️ Me gusta</button>
+                <p id="wer">Likes: 0</p>
+
+                <iframe class="pelicula-avance" width="300" height="300"
+                    src="https://www.youtube.com/embed/DEBt92Ij81s?si=pgSuWyTjzmlAe_W1" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div> <!-- FIN de fila-abajo -->
+        <div class="fila-abajo">
+
+            <!-- EL EXORCISTA -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BZDcyZjIzZmYtZGQ5OS00ODc2LTkzN2EtNjlmMjI2NWMxYzljXkEyXkFqcGc@._V1_.jpg">
+                <h3>El Exorcista (1973)</h3>
+
+                <button onclick="like('exorcista')">❤️ Me gusta</button>
+                <p id="exorcista">Likes: 0</p>
+
+                <iframe src="https://www.youtube.com/embed/qa7j1g_xLkA?si=yUjQzhbu85XfqrO7" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- LA PROFECÍA -->
+            <div class="pelicula">
+                <img src="https://pics.filmaffinity.com/the_omen-934470335-large.jpg">
+                <h3>La Profecía (1976)</h3>
+
+                <button onclick="like('profecia')">❤️ Me gusta</button>
+                <p id="profecia">Likes: 0</p>
+
+                <iframe src="https://www.youtube.com/embed/4ABEi5PQsnQ?si=EotqdSd2Cea0lRzu" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- LA MALDICIÓN DE HILL HOUSE -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/S/pv-target-images/338a5e2aa3df6e2624562ff87d64aa6518d09f3e44f7a77ab5e3061c4c40ea0e.jpg">
+                <h3>La Maldición de Hill House (1999)</h3>
+
+                <button onclick="like('hillhouse')">❤️ Me gusta</button>
+                <p id="hillhouse">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/Q6Nn5l_13W8?si=UsWIfaucdz79J875"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- EL BEBÉ DE ROSEMARY -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BMDYwOTMyY2MtZmYxOC00OGJmLWFhNTAtYmE3NjY4OTIwOGFmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+                <h3>El bebé de Rosemary (1968)</h3>
+
+                <button onclick="like('rosemary')">❤️ Me gusta</button>
+                <p id="rosemary">Likes: 0</p>
+
+                <iframe class="pelicula-avance" width="560" height="315"
+                    src="https://www.youtube.com/embed/dBSbmNNm84Y?si=cT5e2Dsxat96qjh2" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+            <!-- EL CONJURO -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BYWQyNTQwNTAtZDE2Yy00NjlhLWE4N2YtYjBkYTM4ZmM3ZDk0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+
+                <h3>El Conjuro (2013)</h3>
+
+                <button onclick="like('conjuro1')">❤️ Me gusta</button>
+                <p id="conjuro1">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/_zU1gLWGnpg?si=69uKwrg86vtSuNBG"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- EL CONJURO 2 -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BMzM2OTE4ZWUtMzNiNy00MzhmLWE0YmMtZGE3ZTg2ZmUwODUzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+
+                <h3>El Conjuro 2 (2016)</h3>
+
+                <button onclick="like('conjuro2')">❤️ Me gusta</button>
+                <p id="conjuro2">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/cuDBjj_Gs0M?si=77vF5H4LmSIBOa5e"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- EL CONJURO 3 -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BNThkYWE3OGItNzAyNC00N2U4LThjY2QtMGQwYjZhYTI1MzMwXkEyXkFqcGc@._V1_.jpg">
+
+                <h3>El Conjuro 3 (2021)</h3>
+
+                <button onclick="like('conjuro3')">❤️ Me gusta</button>
+                <p id="conjuro3">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/S8nlMJfE6pc?si=y8aCjsvvuth8aXkM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- EL CONJURO 4 -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BMWQyMzU1YWItYzczYy00MGZiLTg1ZTUtY2QwMWViNGQxNmJhXkEyXkFqcGc@._V1_.jpg">
+
+                <h3>El Conjuro 4</h3>
+
+                <button onclick="like('conjuro4')">❤️ Me gusta</button>
+                <p id="conjuro4">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/bMgfsdYoEEo?si=FvQFe6Z7wNA_DZc8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+            <!-- ANNABELLE -->
+            <div class="pelicula">
+                <img
+                    src=https://m.media-amazon.com/images/M/MV5BNjkyMDU5ZWQtZDhkOC00ZWFjLWIyM2MtZWFhMDUzNjdlNzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg>
+
+                <h3>Annabelle (2014)</h3>
+
+                <button onclick="like('annabelle1')">❤️ Me gusta</button>
+                <p id="annabelle1">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/8kmLHwKH31M?si=5tRSYcOFrXlqJGSX"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- ANNABELLE 2 -->
+            <div class="pelicula">
+                <img src="https://es.web.img2.acsta.net/pictures/17/10/02/09/53/5292732.jpg">
+
+                <h3>Annabelle: Creation (2017)</h3>
+
+                <button onclick="like('annabelle2')">❤️ Me gusta</button>
+                <p id="annabelle2">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/z8JQFAavU6M?si=CkozCAebh9BSaoKq"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- ANNABELLE 3 -->
+            <div class="pelicula">
+                <img src="https://es.web.img3.acsta.net/pictures/19/05/20/17/32/1377822.jpg">
+
+                <h3>Annabelle 3: Vuelve a casa (2019)</h3>
+
+                <button onclick="like('annabelle3')">❤️ Me gusta</button>
+                <p id="annabelle3">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/KUnKWjeQA9A?si=Uwzz6OazSon4626I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- LA MONJA -->
+            <div class="pelicula">
+                <img src="https://es.web.img2.acsta.net/pictures/18/08/14/15/35/4396669.jpg">
+
+                <h3>La Monja (2018)</h3>
+
+                <button onclick="like('monja1')">❤️ Me gusta</button>
+                <p id="monja1">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/IKA9H68sgXo?si=18UiV6hlpyvYDcln"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+
+            <!-- LA MONJA 2 -->
+            <div class="pelicula">
+                <img src="https://es.web.img3.acsta.net/c_310_420/pictures/23/07/18/09/37/2734596.jpg">
+
+                <h3>La Monja 2 (2023)</h3>
+
+                <button onclick="like('monja2')">❤️ Me gusta</button>
+                <p id="monja2">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/Em7wEqLzDnE?si=HmcKLe0I0pwd4zOk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- DESTINO FINAL 2 -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BMzEzMmZiZDgtY2IxNC00ZmNjLTljYzMtZjhjZTRhM2IwN2Y5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+                <h3>Destino Final 2</h3>
+                <button onclick="like('df2')">❤️ Me gusta</button>
+                <p id="df2">likes 0</p>
+                <iframe class="pelicula-avance" width="600" height="500"
+                    src="https://www.youtube.com/embed/7vZqVooni2o?si=qe_tzLj2YrdR-fua" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- DESTINO FINAL 6 -->
+            <div class="pelicula">
+                <img
+                    src=https://m.media-amazon.com/images/M/MV5BMTlmNDRiZjgtNmYxNi00NTc3LWFlNzEtNzE0ZGQ1ODdlMDQ5XkEyXkFqcGc@._V1_.jpg>
+
+                <h3>Destino Final 6</h3>
+
+                <button onclick="like('df6')">❤️ Me gusta</button>
+                <p id="df6">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/8FudANSsWNQ?si=qoOxBAEWW0JR-15H"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- LOS OTROS -->
+            <div class="pelicula">
+                <img src="https://pics.filmaffinity.com/Los_otros-613696263-large.jpg">
+
+                <h3>Los Otros (2001)</h3>
+
+                <button onclick="like('losotros')">❤️ Me gusta</button>
+                <p id="losotros">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/PmzWPqRUlm4?si=JHanY-NpiCmd5YPJ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- FIN de fila-abajo -->
+
+            <!-- LA CASA DE CERA -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BYzdjMDE0YjktZmM5Yi00M2Y1LTlmOWQtNTRiMzRhM2NhZTk1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+
+                <h3>La Casa de Cera (2005)</h3>
+
+                <button onclick="like('cera')">❤️ Me gusta</button>
+                <p id="cera">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/9KCy8sGODKo?si=DwBCBb8IodN1QqB9"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- LA AUTOPSIA DE JANE DOE -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BMjA2MTEzMzkzM15BMl5BanBnXkFtZTgwMjM2MTM5MDI@._V1_.jpg">
+
+                <h3>La Autopsia de Jane Doe (2016)</h3>
+
+                <button onclick="like('janedoe')">❤️ Me gusta</button>
+                <p id="janedoe">Likes: 0</p>
+
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/od9VTbZ__uc?si=YDgWH_JHPv036y7Y"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- SAW 1 -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BZTE5MzFlMTktMzBkOC00ZjMxLThmOTAtOGU3ZGEwZGRlNDdjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+                <h3>Saw (2004)</h3>
+                <button onclick="like('saw1')">❤️ Me gusta</button>
+                <p id="saw1">Likes: 0</p>
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/S-1QgOMQ-ls?si=H8ogYOwYzj4aQOnJ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- SAW 2 -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BZGVlNjk3MmItZmUzNy00MzcyLWIzOTktZjllYWU5MDAyMjM1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+                <h3>Saw II (2005)</h3>
+                <button onclick="like('saw2')">❤️ Me gusta</button>
+                <p id="saw2">Likes: 0</p>
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/Lq2AzZB6DUE?si=tdUEtRi_MKDRuT-c"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- SAW 3 -->
+            <div class="pelicula">
+                <img
+                    src="https://www.movieposters.com/cdn/shop/products/7e20754bf94f4508858faed3d704ada2_46cefb1f-5a6e-4be3-b25e-cb580d4bfa49_1024x1024.jpg?v=1762971403">
+                <h3>Saw III (2006)</h3>
+                <button onclick="like('saw3')">❤️ Me gusta</button>
+                <p id="saw3">Likes: 0</p>
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/nRRC8RRC7fY?si=yuTb_8qqbdcscMlq"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- SAW 4 -->
+            <div class="pelicula">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BNjc0NjUyNzg3MF5BMl5BanBnXkFtZTYwODMxOTM3._V1_FMjpg_UX1000_.jpg">
+                <h3>Saw IV (2007)</h3>
+                <button onclick="like('saw4')">❤️ Me gusta</button>
+                <p id="saw4">Likes: 0</p>
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/-A3g2cOnjTI?si=1gJlPOrOJH0Hw4ni"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- SAW 5 -->
+            <div class="pelicula">
+                <img src="https://pics.filmaffinity.com/saw_v_saw_5-726521092-large.jpg">
+                <h3>Saw V (2008)</h3>
+                <button onclick="like('saw5')">❤️ Me gusta</button>
+                <p id="saw5">Likes: 0</p>
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/88pB8m-ZxrM?si=o5cpZOr0GVljfOgK"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- SAW 6 -->
+            <div class="pelicula">
+                <img src="https://es.web.img3.acsta.net/medias/nmedia/18/72/19/23/20084287.jpg">
+                <h3>Saw VI (2009)</h3>
+                <button onclick="like('saw6')">❤️ Me gusta</button>
+                <p id="saw6">Likes: 0</p>
+                <iframe class="pelicula-avance" src="https://www.youtube.com/embed/-zFvxEAdakE?si=_g4NFbnyOeNMtxqQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- FIN de fila-abajo -->
+            <div class="fila-abajo">
+
+                <div class="fila-abajo">
+                    <div class="fila-abajo">
+                        <!-- SAW 7 -->
+                        <div class="pelicula">
+                            <img src="https://es.web.img3.acsta.net/medias/nmedia/18/82/74/47/19634612.jpg">
+                            <h3>Saw 3D (2010)</h3>
+                            <button onclick="like('saw7')">❤️ Me gusta</button>
+                            <p id="saw7">Likes: 0</p>
+                            <iframe class="pelicula-avance"
+                                src="https://www.youtube.com/embed/wemGRv2mWH4?si=WFHw3IZQ31a9DGXa"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                        <!-- JIGSAW -->
+                        <div class="pelicula">
+                            <img
+                                src=https://www.mubis.es/media/articles/16987/190349/trailer-oficial-de-saw-viii-y-poster-final-original.jpg>
+                            <h3>Jigsaw (2017)</h3>
+                            <button onclick="like('saw8')">❤️ Me gusta</button>
+                            <p id="saw8">Likes: 0</p>
+                            <iframe class="pelicula-avance"
+                                src="https://www.youtube.com/embed/OOrvirIVk8o?si=61EV_04zesrUzTYy"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                        <!-- SPIRAL -->
+                        <div class="pelicula">
+                            <img src="https://m.media-amazon.com/images/I/61gGa-rZjrL._AC_UF894,1000_QL80_.jpg">
+                            <h3>Spiral (2021)</h3>
+                            <button onclick="like('saw9')">❤️ Me gusta</button>
+                            <p id="saw9">Likes: 0</p>
+                            <iframe class="pelicula-avance"
+                                src="https://www.youtube.com/embed/gzy6ORqE9IY?si=RAA1jfLWMMYNgkZL"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
+                        <!-- SAW X -->
+                        <div class="pelicula">
+                            <img
+                                src="https://i.etsystatic.com/41716657/r/il/dd672a/5472278206/il_570xN.5472278206_hvxy.jpg">
+                            <h3>Saw X (2023)</h3>
+                            <button onclick="like('saw10')">❤️ Me gusta</button>
+                            <p id="saw10">Likes: 0</p>
+                            <iframe class="pelicula-avance"
+                                src="https://www.youtube.com/embed/FpIaW9TPx8I?si=Gcu7QIEn6O7mRg3r"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
