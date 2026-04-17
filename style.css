@@ -162,3 +162,21 @@ footer{
 .estrellas span {
     color: gray !important;
 }
+.recomendacion {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.recomendacion iframe {
+    width: 400px;
+    height: 220px;
+}
+
+.texto-recomendacion {
+    max-width: 400px;
+}
+#video-centrado{
+display: grid;
+justify-content: center;
+}
