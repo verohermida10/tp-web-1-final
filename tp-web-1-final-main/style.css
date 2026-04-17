@@ -149,4 +149,18 @@ footer{
     gap: 30px;
     flex-wrap: wrap;
     justify-content: flex-start;
+}.estrellas span {
+    cursor: pointer;
+    font-size: 20px;
+    color: gray;
+}
+.estrellas span {
+    cursor: pointer;
+    font-size: 22px;
+    color: gray;
+    transition: 0.2s;
+}
+
+.estrellas span:hover {
+    transform: scale(1.2);
 }
