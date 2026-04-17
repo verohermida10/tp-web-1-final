@@ -70,3 +70,46 @@ function like(peli) {
     contadores[peli]++;
     document.getElementById(peli).innerText = "Likes: " + contadores[peli];
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    
+    document.querySelectorAll(".estrellas").forEach(contenedor => {
+        console.log("funcionando");
+
+        let estrellas = contenedor.querySelectorAll("span");
+        let id = contenedor.dataset.id;
+
+        estrellas.forEach((estrella, index) => {
+
+            estrella.addEventListener("click", () => {
+
+                let valor = parseInt(estrella.dataset.valor);
+
+                localStorage.setItem(id, valor);
+
+                pintar(estrellas, valor);
+            });
+
+        });
+
+        // cargar valor guardado
+        let guardado = localStorage.getItem(id);
+        if (guardado) {
+            pintar(estrellas, parseInt(guardado));
+        } else {
+            pintar(estrellas, 0);
+        }
+
+    });
+
+    function pintar(estrellas, valor) {
+        estrellas.forEach((star, i) => {
+            if (i < valor) {
+                star.style.color = "gold";
+            } else {
+                star.style.color = "gray";
+            }
+        });
+    }
+
+});
