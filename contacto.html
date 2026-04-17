@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - CineMania</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CineMania 🎬</h1>
+    </header>
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="peliculas.html">Películas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <main class="form-container">
+
+        <h2>Crear Cuenta 🍿</h2>
+        <p>Unite a CineMania y guardá tus películas favoritas</p>
+
+        <form class="formulario">
+
+            <label>Nombre completo *</label>
+            <input type="text" placeholder="Ej: Vero Hermida" required>
+
+            <label>Email *</label>
+            <input type="email" placeholder="ejemplo@email.com" required>
+
+            <label>Contraseña *</label>
+            <input type="password" placeholder="Mínimo 8 caracteres" required>
+
+            <label>Confirmar contraseña *</label>
+            <input type="password" placeholder="Repetí tu contraseña" required>
+
+            <label>Teléfono</label>
+            <input type="tel" placeholder="Ej: 11-1234-5678">
+
+            <label>Fecha de nacimiento *</label>
+            <input type="date" required>
+
+            <label>País *</label>
+            <select required>
+                <option value="">Seleccionar país</option>
+                <option>Argentina</option>
+                <option>Uruguay</option>
+                <option>Chile</option>
+                <option>España</option>
+                <option>México</option>
+            </select>
+
+            <div class="checkbox">
+                <input type="checkbox" id="newsletter">
+                <label for="newsletter">Suscribirme a novedades 🎬</label>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones *</label>
+            </div>
+
+            <button type="submit">Crear Cuenta</button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

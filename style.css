@@ -180,3 +180,78 @@ footer{
 display: grid;
 justify-content: center;
 }
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #1e1e2f;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    color: white;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.formulario input,
+.formulario select {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    outline: none;
+    border: 2px solid #f5c518;
+}
+
+.checkbox {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.formulario button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f5c518;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #ffd700;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #111;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #f5c518;
+}
