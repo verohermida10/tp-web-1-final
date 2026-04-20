@@ -14,7 +14,10 @@
     </header>
 
     <main>
-        <h2>Terror</h2>
+        <h2 class="terror">Terror</h2>
+        <p>Las películas de terror más intensas 👻</p>
+        <div class="separador"></div>
+        
         <div class="contenedor">
 
 
@@ -562,7 +565,9 @@
                     </div>
                 </div>
             </div>
-            <h2>Thriller 🔪</h2>
+            <h2 class="thriller">Thriller🔪</h2>
+            <div class="separador"></div>
+            
 
             <div class="fila-abajo">
                 <!-- VUELO NOCTURNO -->
@@ -694,7 +699,8 @@
 
 
             </div>
-            <h2>Acción 💥</h2>
+            <h2 class="accion">Acción💥</h2>
+            <div class="separador"></div>
 
             <div class="fila-abajo">
                 <!-- peliculas de accion -->
@@ -899,7 +905,9 @@
 
                 </div>
             </div>
-            <h2>Deporte ⚽</h2>
+            <h2 class="deporte">Deporte⚽</h2> 
+            
+            <div class="separador"></div>
             <div class="fila-abajo">
 
                 <!-- BOCA 3D -->
@@ -986,3 +994,21 @@
 </body>
 
 </html>
+
+function like(peli) {
+    contadores[peli]++;
+    document.getElementById(peli).innerText = "Likes: " + contadores[peli];
+}
+
+function rate(elemento, valor) {
+
+    let contenedor = elemento.parentElement;
+    let estrellas = contenedor.querySelectorAll("span");
+
+    estrellas.forEach((star, index) => {
+        if (index < valor) {
+            star.style.backgroundColor = "gold";
+        } else {
+            star.style.backgroundColor = "gray";
+        }
+    });

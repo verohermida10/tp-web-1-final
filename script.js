@@ -66,6 +66,8 @@ let contadores = {
     messi: 0,
 };
 
+
+
 function like(peli) {
     contadores[peli]++;
     document.getElementById(peli).innerText = "Likes: " + contadores[peli];
@@ -82,9 +84,4 @@ function rate(elemento, valor) {
         } else {
             star.style.backgroundColor = "gray";
         }
-    });
-
-}
-
-
-
+    });}
