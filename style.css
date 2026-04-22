@@ -297,7 +297,7 @@ footer {
 }
 
 .thriller {
-    color: #4b0082;
+    color: #006882;
     /* violeta oscuro */
 }
 
@@ -439,4 +439,13 @@ header {
 
     background: rgba(0,0,0,0.4);
     backdrop-filter: blur(10px);
+}
+.recomendacion {
+    max-width: 900px;   /* limita el ancho */
+    margin: 40px auto;  /* centra horizontal */
+    padding: 20px;
+    border-radius: 15px;
+
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
