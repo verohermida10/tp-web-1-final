@@ -1,79 +1,106 @@
 let contadores = {
-    df2: 0,
-    sinister: 0,
-    gonjiam: 0,
-    wer: 0,
-    sinister2: 0,
-    martyrs: 0,
-    caso39: 0,
-    ritual: 0,
-    ghostland: 0,
-    elbeberosemary: 0,
-    exorcista: 0,
-    profecia: 0,
-    hillhouse: 0,
-    rosemary: 0,
-    conjuro1: 0,
-    conjuro2: 0,
-    conjuro3: 0,
-    conjuro4: 0,
-    annabelle1: 0,
-    annabelle2: 0,
-    annabelle3: 0,
-    monja1: 0,
-    monja2: 0,
-    saw1: 0,
-    saw2: 0,
-    saw3: 0,
-    saw4: 0,
-    saw5: 0,
-    saw6: 0,
-    saw7: 0,
-    saw8: 0,
-    saw9: 0,
-    saw10: 0,
-    df6: 0,
-    janedoe: 0,
-    losotros: 0,
-    cera: 0,
-    redeye: 0,
-    poseidon: 0,
-    mariposa: 0,
-    imageofyou: 0,
-    housenextdoor: 0,
-    flightplan: 0,
-    factory: 0,
-    cabina10: 0,
-    rascacielos: 0,
-    smith: 0,
-    sanandres: 0,
-    ff1: 0,
-    ff2: 0,
-    ff3: 0,
-    ff4: 0,
-    ff5: 0,
-    ff6:0,
-    ff7: 0,
-    ff8: 0,
-    ff9: 0,
-    ff10: 0,
-    deathrace1: 0,
-    deathrace2: 0,
-    boca: 0,
-    f1: 0,
-    alex: 0,
-    rocky4: 0,
-    cr7: 0,
-    messi: 0,
+    terror: {
+        df2: 0,
+        sinister: 0,
+        gonjiam: 0,
+        wer: 0,
+        sinister2: 0,
+        martyrs: 0,
+        caso39: 0,
+        ritual: 0,
+        ghostland: 0,
+        elbeberosemary: 0,
+        exorcista: 0,
+        profecia: 0,
+        hillhouse: 0,
+        rosemary: 0,
+        conjuro1: 0,
+        conjuro2: 0,
+        conjuro3: 0,
+        conjuro4: 0,
+        annabelle1: 0,
+        annabelle2: 0,
+        annabelle3: 0,
+        monja1: 0,
+        monja2: 0,
+        saw1: 0,
+        saw2: 0,
+        saw3: 0,
+        saw4: 0,
+        saw5: 0,
+        saw6: 0,
+        saw7: 0,
+        saw8: 0,
+        saw9: 0,
+        saw10: 0,
+        df6: 0,
+        janedoe: 0,
+        losotros: 0,
+        cera: 0
+    },
+
+    thriller: {
+        redeye: 0,
+        poseidon: 0,
+        mariposa: 0,
+        imageofyou: 0,
+        housenextdoor: 0,
+        flightplan: 0,
+        factory: 0,
+        cabina10: 0
+    },
+
+    accion: {
+        rascacielos: 0,
+        smith: 0,
+        sanandres: 0,
+        ff1: 0,
+        ff2: 0,
+        ff3: 0,
+        ff4: 0,
+        ff5: 0,
+        ff6: 0,
+        ff7: 0,
+        ff8: 0,
+        ff9: 0,
+        ff10: 0,
+        deathrace1: 0,
+        deathrace2: 0
+    },
+
+    deporte: {
+        boca: 0,
+        f1: 0,
+        alex: 0,
+        rocky4: 0,
+        cr7: 0,
+        messi: 0
+    }
 };
 
 
-
 function like(peli) {
-    contadores[peli]++;
-    document.getElementById(peli).innerText = "Likes: " + contadores[peli];
+
+    let categoria;
+
+    if (contadores.terror[peli] !== undefined) {
+        categoria = "terror";
+    } else if (contadores.thriller[peli] !== undefined) {
+        categoria = "thriller";
+    } else if (contadores.accion[peli] !== undefined) {
+        categoria = "accion";
+    } else if (contadores.deporte[peli] !== undefined) {
+        categoria = "deporte";
+    }
+
+    contadores[categoria][peli]++;
+    document.getElementById(peli).innerText =
+        "Likes: " + contadores[categoria][peli];
 }
 
+
+
+// 🔹 ESTRELLAS (NO TOQUÉ NADA)
 function rate(elemento, valor) {
 
     let contenedor = elemento.parentElement;
@@ -85,4 +112,5 @@ function rate(elemento, valor) {
         } else {
             star.style.backgroundColor = "gray";
         }
-    });}
+    });
+}
