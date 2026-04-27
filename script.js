@@ -114,3 +114,65 @@ function rate(elemento, valor) {
         }
     });
 }
+function extraerPeliculasTerror() {
+
+    const peliculas = [];
+    const contenedor = document.querySelectorAll(".pelicula");
+
+    contenedor.forEach(peli => {
+
+        const titulo = peli.querySelector("h3")?.innerText;
+        const imagen = peli.querySelector("img")?.src;
+        const trailer = peli.querySelector("iframe")?.src;
+        const id = peli.querySelector("p")?.id;
+
+        peliculas.push({
+            id,
+            titulo,
+            imagen,
+            trailer
+        });
+    });
+
+    console.log(peliculas); // 🔥 ACÁ TENÉS TODO
+}
+extraerPeliculasTerror();
+const contenedor = document.getElementById("contenedor-terror");
+
+console.log(contenedor); //
+const peliculasTerror =
+    peliculasTerror = [
+        {
+            id: "sinister",
+            titulo: "Sinister",
+            imagen: "https://m.media-amazon.com/images/M/MV5BMjI5MTg1Njg0Ml5BMl5BanBnXkFtZTcwNzg2Mjc4Nw@@._V1_.jpg",
+            trailer: "https://www.youtube.com/embed/_kbQAJR9YWQ"
+        },
+        {
+            id: "sinister2",
+            titulo: "Sinister 2",
+            imagen: "https://m.media-amazon.com/images/M/MV5BMjM3MTQ5NjA0OV5BMl5BanBnXkFtZTgwMzg2OTYyNTE@._V1_.jpg",
+            trailer: "https://www.youtube.com/embed/4L64vpYNcEM"
+        }
+        
+    ];
+function mostrarPeliculasTerror() {
+    const contenedor = document.getElementById("contenedor-terror");
+
+    contenedor.innerHTML = "";
+
+    peliculasTerror.forEach(peli => {
+        contenedor.innerHTML += `
+      <div class="pelicula">
+        <img src="${peli.imagen}">
+        <h3>${peli.titulo}</h3>
+
+        <button onclick="like('${peli.id}')">❤️ Me gusta</button>
+        <p id="${peli.id}">Likes: 0</p>
+
+        <iframe class="pelicula-avance" src="${peli.trailer}" allowfullscreen></iframe>
+      </div>
+    `;
+    });
+}
+renderPeliculas();
