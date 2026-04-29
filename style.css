@@ -478,29 +478,24 @@ iframe {
 .pelicula {
     width: 300px;
 }
-.tabla-pelis {
-    width: 80%;
-    margin: 30px auto;
-    border-collapse: collapse;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.tabla-pelis th {
-    background-color: #f5c518;
-    color: black;
-    padding: 12px;
-    font-size: 16px;
-}
-
-.tabla-pelis td {
-    padding: 10px;
+.tabla-links {
     text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.2);
+    margin: 40px 0;
 }
 
-.tabla-pelis tr:hover {
+.tabla-links a {
+    color: #f5c518;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 8px;
     background: rgba(255,255,255,0.05);
     transition: 0.3s;
+}
+
+.tabla-links a:hover {
+    background: #f5c518;
+    color: black;
 }
