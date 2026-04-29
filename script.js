@@ -100,7 +100,7 @@ function like(peli) {
 
 
 
-// 🔹 ESTRELLAS (NO TOQUÉ NADA)
+// 
 function rate(elemento, valor) {
 
     let contenedor = elemento.parentElement;
@@ -137,42 +137,47 @@ function extraerPeliculasTerror() {
     console.log(peliculas); // 🔥 ACÁ TENÉS TODO
 }
 extraerPeliculasTerror();
-const contenedor = document.getElementById("contenedor-terror");
+
 
 console.log(contenedor); //
-const peliculasTerror =
-    peliculasTerror = [
-        {
-            id: "sinister",
-            titulo: "Sinister",
-            imagen: "https://m.media-amazon.com/images/M/MV5BMjI5MTg1Njg0Ml5BMl5BanBnXkFtZTcwNzg2Mjc4Nw@@._V1_.jpg",
-            trailer: "https://www.youtube.com/embed/_kbQAJR9YWQ"
-        },
-        {
-            id: "sinister2",
-            titulo: "Sinister 2",
-            imagen: "https://m.media-amazon.com/images/M/MV5BMjM3MTQ5NjA0OV5BMl5BanBnXkFtZTgwMzg2OTYyNTE@._V1_.jpg",
-            trailer: "https://www.youtube.com/embed/4L64vpYNcEM"
-        }
-        
-    ];
-function mostrarPeliculasTerror() {
+const peliculasTerror = [
+    {
+        id: "sinister",
+        titulo: "Sinister",
+        imagen: "https://m.media-amazon.com/images/M/MV5BMjI5MTg1Njg0Ml5BMl5BanBnXkFtZTcwNzg2Mjc4Nw@@._V1_.jpg",
+        trailer: "https://www.youtube.com/embed/_kbQAJR9YWQ"
+    },
+    {
+        id: "sinister2",
+        titulo: "Sinister 2",
+        imagen: "https://m.media-amazon.com/images/M/MV5BMjM3MTQ5NjA0OV5BMl5BanBnXkFtZTgwMzg2OTYyNTE@._V1_.jpg",
+        trailer: "https://www.youtube.com/embed/4L64vpYNcEM"
+    }
+
+];
+
     const contenedor = document.getElementById("contenedor-terror");
 
     contenedor.innerHTML = "";
 
     peliculasTerror.forEach(peli => {
         contenedor.innerHTML += `
-      <div class="pelicula">
-        <img src="${peli.imagen}">
-        <h3>${peli.titulo}</h3>
+        <div class="pelicula">
+            <img src="${peli.imagen}">
+            <h3>${peli.titulo}</h3>
 
-        <button onclick="like('${peli.id}')">❤️ Me gusta</button>
-        <p id="${peli.id}">Likes: 0</p>
+            <button onclick="like('${peli.id}')">❤️ Me gusta</button>
+            <p id="${peli.id}">Likes: 0</p>
 
-        <iframe class="pelicula-avance" src="${peli.trailer}" allowfullscreen></iframe>
-      </div>
-    `;
+            <div class="estrellas">
+                <span onclick="rate(this,1)">★</span>
+                <span onclick="rate(this,2)">★</span>
+                <span onclick="rate(this,3)">★</span>
+                <span onclick="rate(this,4)">★</span>
+                <span onclick="rate(this,5)">★</span>
+            </div>
+
+            <iframe class="pelicula-avance" src="${peli.trailer}" allowfullscreen></iframe>
+        </div>
+        `;
     });
-}
-renderPeliculas();

@@ -20,11 +20,11 @@
     <h2 class="terror">Terror👻</h2>
     <div class="separador"></div>
     <div class="contenedor">
-        <div id="contenedor-terror"></div>
+
 
         <div id="terror-original">
-    <!-- TODAS tus pelis de terror actuales -->
-</div>
+            <!-- TODAS tus pelis de terror actuales -->
+        </div>
         <!-- SINISTER -->
         <div class="pelicula">
             <img src="https://m.media-amazon.com/images/M/MV5BMjI5MTg1Njg0Ml5BMl5BanBnXkFtZTcwNzg2Mjc4Nw@@._V1_.jpg">
@@ -107,7 +107,7 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div> <!-- FIN de  -->
-    <div class="fila-abajo">
+    <div class="contenedor">
 
         <!-- EL EXORCISTA -->
         <div class="pelicula">
@@ -203,7 +203,7 @@
 
             <h3>El Conjuro (2013)</h3>
 
-          <button onclick="like('conjuro1','terror')">❤️ Me gusta</button>
+            <button onclick="like('conjuro1','terror')">❤️ Me gusta</button>
             <p id="conjuro1">Likes: 0</p>
             <div class="estrellas">
                 <span onclick="rate(this,1)">⭐</span>
@@ -458,7 +458,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <!-- FIN de fila-abajo -->
+        <!-- FIN de contenedor -->
 
         <!-- LA CASA DE CERA -->
         <div class="pelicula">
@@ -618,7 +618,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <!-- FIN de fila-abajo -->
+        <!-- FIN de contenedor -->
 
         <!-- SAW 7 -->
         <div class="pelicula">
@@ -696,8 +696,8 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-    </div> <!-- FIN de fila-abajo -->
-    <div class="fila-abajo">
+    </div> <!-- FIN de contenedor -->
+    <div class="contenedor">
         <div class="pelicula">
             <img
                 src=https://m.media-amazon.com/images/M/MV5BN2Q5MWQ0OWYtMTUzMC00ZmU3LWEyNDAtZjg1NjE2ZjVkM2I3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg>
@@ -785,12 +785,12 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <!-- FIN de fila-abajo -->
+        <!-- FIN de contenedor -->
 
     </div>
     <h2 class="thriller">Thriller🔪</h2>
     <div class="separador"></div>
-    <div class="fila-abajo">
+    <div class="contenedor">
         <!-- VUELO NOCTURNO -->
         <div class="pelicula">
             <img src="https://www.filmico.tv/wp-content/uploads/2024/07/07-3.jpg">
@@ -817,7 +817,7 @@
         <div class="pelicula">
             <img width="600px" height="300px"
                 src="https://static.wikia.nocookie.net/doblaje/images/9/94/Poseidon-693x990.jpg/revision/latest?cb=20131231095739&path-prefix=es">
-                <h3>Poseidón (2006)</h3>
+            <h3>Poseidón (2006)</h3>
 
             <button onclick="like('poseidon')">❤️ Me gusta</button>
             <p id="poseidon">Likes: 0</p>
@@ -899,7 +899,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="fila-abajo">
+        <div class="contenedor">
 
             <!-- PLAN DE VUELO -->
             <div class="pelicula">
@@ -973,10 +973,10 @@
 
     <h2 class="accion">Acción💥</h2>
     <div class="separador"></div>
-    <div class="fila-abajo">
+    <div class="contenedor">
         <!-- peliculas de accion -->
     </div>
-    <div class="fila-abajo">
+    <div class="contenedor">
 
 
         <!-- RASCACIELOS -->
@@ -1262,7 +1262,7 @@
 
     <h2 class="deporte">Deporte⚽</h2>
     <div class="separador"></div>
-    <div class="fila-abajo">
+    <div class="contenedor">
 
         <!-- BOCA 3D -->
         <div class="pelicula">
@@ -1382,8 +1382,49 @@
     </div>
     </main>
 
-    </div>
+    
     <script src="script.js"></script>
+    <div class="bloque">
+    <h2>📊 Listado de Películas</h2>
+
+    <table class="tabla-pelis">
+        <tr>
+            <th>Título</th>
+            <th>Categoría</th>
+            <th>Estado</th>
+        </tr>
+
+        <tr>
+            <td>Sinister</td>
+            <td class="terror">Terror</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>El Conjuro</td>
+            <td class="terror">Terror</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>Rápido y Furioso</td>
+            <td class="accion">Acción</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>Flightplan</td>
+            <td class="thriller">Thriller</td>
+            <td>Disponible</td>
+        </tr>
+
+        <tr>
+            <td>Rocky IV</td>
+            <td class="deporte">Deporte</td>
+            <td>Disponible</td>
+        </tr>
+    </table>
+</div>
 </body>
 
 </html>
