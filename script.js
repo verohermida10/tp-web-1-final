@@ -36,7 +36,8 @@ let contadores = {
         df6: 0,
         janedoe: 0,
         losotros: 0,
-        cera: 0
+        cera: 0,
+        camino: 0,
     },
 
     thriller: {
@@ -153,15 +154,16 @@ const peliculasTerror = [
         imagen: "https://m.media-amazon.com/images/M/MV5BMjM3MTQ5NjA0OV5BMl5BanBnXkFtZTgwMzg2OTYyNTE@._V1_.jpg",
         trailer: "https://www.youtube.com/embed/4L64vpYNcEM"
     }
-
+     
+   
 ];
 
-    const contenedor = document.getElementById("contenedor-terror");
+const contenedor = document.getElementById("contenedor-terror");
 
-    contenedor.innerHTML = "";
+contenedor.innerHTML = "";
 
-    peliculasTerror.forEach(peli => {
-        contenedor.innerHTML += `
+peliculasTerror.forEach(peli => {
+    contenedor.innerHTML += `
         <div class="pelicula">
             <img src="${peli.imagen}">
             <h3>${peli.titulo}</h3>
@@ -180,4 +182,4 @@ const peliculasTerror = [
             <iframe class="pelicula-avance" src="${peli.trailer}" allowfullscreen></iframe>
         </div>
         `;
-    });
+});
