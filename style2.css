@@ -507,7 +507,8 @@ iframe {
     padding: 8px;
     border-radius: 8px;
 }
-#contenedor-deporte {
+
+.contenedor{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -518,6 +519,6 @@ iframe {
     margin-top: 30px;
 }
 
-#contenedor-deporte .pelicula {
+.contenedor .pelicula {
     width: 300px;
 }
