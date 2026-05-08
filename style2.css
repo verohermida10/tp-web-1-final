@@ -1,0 +1,523 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #eee;
+
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+        url("https://img.freepik.com/foto-gratis/collaje-fondo-pelicula_23-2149876003.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+
+    nav a {
+        color: white;
+        margin: 10px;
+        text-decoration: none;
+    }
+}
+
+main {
+    display: grid;
+
+    padding: 40px;
+}
+
+iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedor-pelis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.card img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.contenedor-pelis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+
+.contenedor-pelis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card button {
+    margin-top: 10px;
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contenedor {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.pelicula {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pelicula:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.pelicula img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pelicula-avance {
+    width: 300px;
+    height: 200px;
+}
+
+.seccion-abajo {
+    margin-top: 50px;
+    text-align: left;
+}
+
+
+
+.pelicula-avance {
+    width: 300px;
+    height: 200px;
+}
+
+.fila-abajo {
+     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.estrellas span {
+    cursor: pointer;
+    font-size: 20px;
+    color: gray;
+}
+
+.estrellas span {
+    cursor: pointer;
+    font-size: 22px;
+    color: gray;
+}
+
+.estrellas span {
+    color: gray !important;
+}
+
+.recomendacion {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.recomendacion iframe {
+    width: 400px;
+    height: 220px;
+}
+
+.texto-recomendacion {
+    max-width: 400px;
+}
+
+#video-centrado {
+    display: grid;
+    justify-content: center;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #1e1e2f;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.form-container h2 {
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.formulario input,
+.formulario select {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    outline: none;
+    border: 2px solid #f5c518;
+}
+
+.checkbox {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.formulario button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f5c518;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #ffd700;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #111;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #f5c518;
+}
+
+.separador {
+    width: 80%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 15px auto 30px auto;
+}
+
+.terror {
+    color: #8b0000;
+    /* rojo oscuro */
+}
+
+.thriller {
+    color: #006882;
+    /* violeta oscuro */
+}
+
+.accion {
+    color: #ff8c00;
+    /* naranja */
+}
+
+.deporte {
+    color: #2e8b57;
+    /* verde */
+}
+
+button {
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.pelicula p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.like-animacion {
+    position: absolute;
+    color: #ff4d6d;
+    font-weight: bold;
+    font-size: 18px;
+    animation: subir 1s ease forwards;
+    pointer-events: none;
+}
+
+.pelicula {
+    position: relative;
+}
+
+.like-animacion {
+    position: absolute;
+    color: #ff4d6d;
+    font-weight: bold;
+    animation: subir 1s ease forwards;
+}
+
+@keyframes subir {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+}
+
+.bloque {
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f5c518;
+}
+
+.recomendacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.recomendacion {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 25px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 15px;
+
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+
+    margin: 40px 20px;
+}.recomendacion iframe {
+    width: 400px;
+    height: 220px;
+    border-radius: 10px;
+}
+.recomendacion-texto h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.recomendacion-texto p {
+    color: #ccc;
+    line-height: 1.5;
+}
+.seccion-doble {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.card {
+    width: 160px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+.estrellas {
+    color: gold;
+    font-size: 14px;
+    margin-top: 5px;
+}
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 26px;
+}
+header {
+    text-align: center;
+    padding: 20px;
+
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+.recomendacion {
+    max-width: 900px;   /* limita el ancho */
+    margin: 40px auto;  /* centra horizontal */
+    padding: 20px;
+    border-radius: 15px;
+
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+#contenedor-terror {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+}
+.pelicula {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 👈 separa todo adentro */
+
+    align-items: center; /* 👈 centra contenido */
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+ justify-content: flex-start;
+    align-content: flex-end;
+}
+
+
+.pelicula {
+    width: 300px;
+}
+.tabla-links {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.tabla-links a {
+    color: #f5c518;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+.tabla-links a:hover {
+    background: #f5c518;
+    color: black;
+}
+.curiosidad {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #f5c518;
+    background: rgba(255,255,255,0.05);
+    padding: 8px;
+    border-radius: 8px;
+}
+#contenedor-deporte {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    justify-items: center;
+    align-items: start;
+
+    margin-top: 30px;
+}
+
+#contenedor-deporte .pelicula {
+    width: 300px;
+}

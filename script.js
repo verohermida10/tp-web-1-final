@@ -140,7 +140,7 @@ function extraerPeliculasTerror() {
 extraerPeliculasTerror();
 
 
-console.log(contenedor); //
+
 const peliculasTerror = [
     {
         id: "sinister",
@@ -158,10 +158,10 @@ const peliculasTerror = [
    
 ];
 
-const contenedor = document.getElementById("contenedor-terror");
+/* const contenedor = document.getElementById("contenedor-terror");
 
-contenedor.innerHTML = "";
-
+contenedor.innerHTML = ""; */
+/* 
 peliculasTerror.forEach(peli => {
     contenedor.innerHTML += `
         <div class="pelicula">
@@ -182,4 +182,26 @@ peliculasTerror.forEach(peli => {
             <iframe class="pelicula-avance" src="${peli.trailer}" allowfullscreen></iframe>
         </div>
         `;
-});
+}); */
+/* function agregarEstrellas() {
+
+    const peliculas = document.querySelectorAll(".pelicula");
+
+    peliculas.forEach(peli => {
+
+        const estrellas = document.createElement("div");
+        estrellas.classList.add("estrellas");
+
+        for (let i = 1; i <= 5; i++) {
+
+            estrellas.innerHTML += `
+                <span onclick="rate(this, ${i})">⭐</span>
+            `;
+        }
+
+        peli.appendChild(estrellas);
+    });
+}
+
+window.onload = agregarEstrellas;
+ */
