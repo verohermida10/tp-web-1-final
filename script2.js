@@ -287,14 +287,14 @@ const peliculasTerror = [
         id: "saw2",
         titulo: "Saw II (2005)",
         imagen: "https://m.media-amazon.com/images/M/MV5BZGVlNjk3MmItZmUzNy00MzcyLWIzOTktZjllYWU5MDAyMjM1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        curiosidad: "💡 Curiosidad: Muchas de las trampas de Saw II fueron construidas físicamente para que los actores reaccionaran de manera más realista. La famosa piscina de agujas utilizó miles de jeringas reales con puntas especiales para evitar accidentes",
+        curiosidad: "💡 Curiosidad: Muchas de las trampas de Saw II fueron construidas físicamente para que los actores reaccionaran de manera más realista. La famosa piscina de agujas utilizó miles de jeringas reales con puntas especiales para evitar accidentes.",
         trailer: "https://www.youtube.com/embed/Lq2AzZB6DUE?si=tdUEtRi_MKDRuT-c"
     },
     {
         id: "saw3",
         titulo: "Saw III (2006)",
         imagen: "https://www.movieposters.com/cdn/shop/products/7e20754bf94f4508858faed3d704ada2_46cefb1f-5a6e-4be3-b25e-cb580d4bfa49_1024x1024.jpg?v=1762971403",
-        curiosidad: "💡 Curiosidad: Saw III fue considerada la película más sangrienta de la saga hasta ese momento. El maquillaje y los efectos prácticos llevaron horas de trabajo diario para lograr las escenas más brutales",
+        curiosidad: "💡 Curiosidad: Saw III fue considerada la película más sangrienta de la saga hasta ese momento. El maquillaje y los efectos prácticos llevaron horas de trabajo diario para lograr las escenas más brutales.",
         trailer: "https://www.youtube.com/embed/nRRC8RRC7fY?si=yuTb_8qqbdcscMlq"
     },
 
@@ -341,7 +341,7 @@ const peliculasTerror = [
         id: "saw9",
         titulo: "Spiral (2021)",
         imagen: "https://m.media-amazon.com/images/I/61gGa-rZjrL._AC_UF894,1000_QL80_.jpg",
-        curiosidad: "💡 Curiosidad: Spiral fue impulsada por una idea original del actor Chris Rock, quien era fan de Saw y quiso darle a la franquicia un enfoque más policial y detectivesco",
+        curiosidad: "💡 Curiosidad: Spiral fue impulsada por una idea original del actor Chris Rock, quien era fan de Saw y quiso darle a la franquicia un enfoque más policial y detectivesco.",
         trailer: "https://www.youtube.com/embed/gzy6ORqE9IY?si=RAA1jfLWMMYNgkZL"
     },
 
@@ -383,6 +383,14 @@ const peliculasTerror = [
         curiosidad: "",
         trailer: "https://www.youtube.com/embed/ni_DF8waeDE?si=jdGgCTCmYoq-tFJ8"
     },
+    
+
+
+
+
+
+
+
 ]
 const peliculasThriller = [
     {
